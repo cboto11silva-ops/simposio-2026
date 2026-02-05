@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <title>Simpósio Científico 2026</title>
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
     background: linear-gradient(135deg, #1c2541, #3a86ff);
 }
@@ -29,37 +29,61 @@ header p {
     opacity: 0.9;
 }
 
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 26px;
+    background: #06d6a0;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.buttons a.secondary {
+    background: #ffd166;
+}
+
 section {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 60px 20px;
 }
 
 h2 {
-    color: #3a86ff;
-    border-left: 4px solid #3a86ff;
-    padding-left: 10px;
+    color: #ffd166;
+    border-left: 4px solid #ffd166;
+    padding-left: 12px;
+    margin-bottom: 20px;
 }
 
-.info {
+.card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
 }
 
 .card {
     background: #1c2541;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 12px;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 12px;
 }
 
 footer {
     background: #000814;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     font-size: 0.9rem;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 </style>
 </head>
@@ -69,41 +93,74 @@ footer {
 <header>
     <h1>Simpósio Científico 2026</h1>
     <p>Inovação, Pesquisa e Tecnologia</p>
-    <p>📍 Local · 🗓️ Data</p>
+    <p>📍 Cidade / Estado · 🗓️ Data do Evento</p>
+
+    <div class="buttons">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5599999999999" target="_blank">
+            💬 WhatsApp
+        </a>
+
+        <!-- Inscrição -->
+        <a href="https://forms.google.com" target="_blank" class="secondary">
+            📝 Inscreva-se
+        </a>
+    </div>
 </header>
 
 <section>
     <h2>Sobre o Evento</h2>
     <p>
-        O Simpósio Científico 2026 reúne pesquisadores, docentes e estudantes
-        para a apresentação e discussão de trabalhos científicos,
-        promovendo a troca de conhecimento e inovação acadêmica.
+        O Simpósio Científico 2026 tem como objetivo promover a divulgação
+        de pesquisas científicas, estimular a produção acadêmica e
+        fortalecer a integração entre pesquisadores, docentes e estudantes.
     </p>
 </section>
 
 <section>
-    <h2>Informações Gerais</h2>
+    <h2>Programação Preliminar</h2>
 
-    <div class="info">
+    <div class="card-grid">
         <div class="card">
-            <h3>📄 Submissão de Trabalhos</h3>
-            <p>Em breve edital completo para envio de artigos e resumos.</p>
+            <h3>📌 Abertura</h3>
+            <p>Cerimônia institucional e palestra inaugural.</p>
         </div>
 
         <div class="card">
-            <h3>🎓 Público-Alvo</h3>
-            <p>Pesquisadores, professores, acadêmicos e profissionais.</p>
+            <h3>📄 Apresentação de Trabalhos</h3>
+            <p>Sessões orais e exposição de pôsteres científicos.</p>
         </div>
 
         <div class="card">
-            <h3>📅 Programação</h3>
-            <p>Palestras, mesas-redondas e apresentações científicas.</p>
+            <h3>🎤 Palestras e Mesas-Redondas</h3>
+            <p>Discussões com pesquisadores convidados.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏅 Encerramento</h3>
+            <p>Premiação e considerações finais.</p>
         </div>
     </div>
 </section>
 
+<section>
+    <h2>Local do Evento</h2>
+
+    <p>
+        O evento será realizado no seguinte endereço:
+        <br><strong>Nome da Instituição / Auditório</strong>
+    </p>
+
+    <!-- Google Maps -->
+    <iframe 
+        src="https://www.google.com/maps?q=São%20Paulo&output=embed"
+        height="350"
+        loading="lazy">
+    </iframe>
+</section>
+
 <footer>
-    © 2026 — Simpósio Científico · Publicado via GitHub Pages
+    © 2026 — Simpósio Científico · Todos os direitos reservados
 </footer>
 
 </body>
