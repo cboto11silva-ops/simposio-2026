@@ -1,173 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simpósio Científico 2026</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f0f4f8;
-      color: #333;
-    }
+<meta charset="UTF-8">
+<title>Simpósio Científico 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header {
-      background-color: #1E3A8A;
-      color: #fff;
-      text-align: center;
-      padding: 50px 20px;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0b132b;
+    color: #eaeaea;
+}
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
+header {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1c2541, #3a86ff);
+}
 
-    header p {
-      font-size: 1.2rem;
-    }
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
 
-    .section {
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    }
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
 
-    .section h2 {
-      color: #1E3A8A;
-      margin-bottom: 15px;
-    }
+h2 {
+    color: #3a86ff;
+    border-left: 4px solid #3a86ff;
+    padding-left: 10px;
+}
 
-    .section p, .section ul {
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
 
-    .section ul li {
-      margin-bottom: 8px;
-    }
+.card {
+    background: #1c2541;
+    padding: 25px;
+    border-radius: 10px;
+}
 
-    .whatsapp-btn {
-      display: block;
-      width: 100%;
-      max-width: 300px;
-      margin: 15px auto 0;
-      background-color: #25D366;
-      color: #fff;
-      text-decoration: none;
-      padding: 15px 25px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-align: center;
-      transition: background-color 0.3s ease;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #1ebe57;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    /* Media queries para responsividade */
-    @media(max-width: 600px) {
-      header h1 { font-size: 1.8rem; }
-      header p { font-size: 1rem; }
-      .whatsapp-btn { padding: 12px 20px; }
-      .section { padding: 20px; }
-    }
-
-    @media(max-width: 400px) {
-      header h1 { font-size: 1.5rem; }
-      .section p, .section ul { font-size: 0.95rem; }
-      .whatsapp-btn { font-size: 0.95rem; padding: 10px 15px; }
-    }
-  </style>
+footer {
+    background: #000814;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
+<header>
     <h1>Simpósio Científico 2026</h1>
-    <p>Explorando novas fronteiras da ciência e inovação</p>
-  </header>
+    <p>Inovação, Pesquisa e Tecnologia</p>
+    <p>📍 Local · 🗓️ Data</p>
+</header>
 
-  <div class="container">
+<section>
+    <h2>Sobre o Evento</h2>
+    <p>
+        O Simpósio Científico 2026 reúne pesquisadores, docentes e estudantes
+        para a apresentação e discussão de trabalhos científicos,
+        promovendo a troca de conhecimento e inovação acadêmica.
+    </p>
+</section>
 
-    <!-- Apresentação -->
-    <div class="section" id="apresentacao">
-      <h2>Apresentação</h2>
-      <p>O Simpósio Científico 2026 reunirá pesquisadores, professores e estudantes para discutir avanços em ciência, tecnologia e inovação. Serão apresentados trabalhos científicos, palestras e mesas-redondas com especialistas renomados.</p>
+<section>
+    <h2>Informações Gerais</h2>
+
+    <div class="info">
+        <div class="card">
+            <h3>📄 Submissão de Trabalhos</h3>
+            <p>Em breve edital completo para envio de artigos e resumos.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎓 Público-Alvo</h3>
+            <p>Pesquisadores, professores, acadêmicos e profissionais.</p>
+        </div>
+
+        <div class="card">
+            <h3>📅 Programação</h3>
+            <p>Palestras, mesas-redondas e apresentações científicas.</p>
+        </div>
     </div>
+</section>
 
-    <!-- Programação Preliminar -->
-    <div class="section" id="programacao">
-      <h2>Programação Preliminar</h2>
-      <ul>
-        <li>Dia 15/08 - Abertura e palestras iniciais</li>
-        <li>Dia 16/08 - Apresentação de trabalhos científicos</li>
-        <li>Dia 17/08 - Mesas-redondas e encerramento</li>
-      </ul>
-    </div>
-
-    <!-- Inscrições -->
-    <div class="section" id="inscricoes">
-      <h2>Inscrições</h2>
-      <p>As inscrições estão abertas! Garanta sua participação preenchendo o formulário e entrando em contato pelo WhatsApp abaixo:</p>
-      <a href="https://wa.me/5511987654321?text=Olá,%20quero%20me%20inscrever%20no%20Simpósio%20Científico%202026" target="_blank" class="whatsapp-btn">Falar no WhatsApp</a>
-    </div>
-
-    <!-- Local do Evento -->
-    <div class="section" id="local">
-      <h2>Local do Evento</h2>
-      <p><strong>Data:</strong> 15 a 17 de agosto de 2026</p>
-      <p><strong>Local:</strong> Centro de Convenções de Salvador - BA</p>
-      <p>O local conta com estrutura completa para eventos científicos, estacionamento e fácil acesso ao transporte público.</p>
-
-      <!-- Google Maps Embed -->
-      <div style="width:100%; height:300px; margin-top:15px;">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.782235940253!2d-38.49529518468157!3d-12.96850779046779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7162505b1b2a1b%3A0x99a4c6e7b5b6dc87!2sCentro%20de%20Conven%C3%A7%C3%B5es%20de%20Salvador!5e0!3m2!1spt-BR!2sbr!4v1706968838400!5m2!1spt-BR!2sbr" 
-          width="100%" 
-          height="100%" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
-
-    <!-- Contato -->
-    <div class="section" id="contato">
-      <h2>Contato</h2>
-      <p>Para dúvidas ou informações adicionais, entre em contato via WhatsApp:</p>
-      <a href="https://wa.me/5511987654321?text=Olá,%20tenho%20uma%20dúvida%20sobre%20o%20Simpósio%20Científico%202026" target="_blank" class="whatsapp-btn">Falar no WhatsApp</a>
-    </div>
-
-    <!-- Hospedagem -->
-    <div class="section" id="hospedagem">
-      <h2>Hospedagem</h2>
-      <p>Recomendamos hotéis próximos ao Centro de Convenções de Salvador - BA, com tarifas especiais para participantes do simpósio. Consulte diretamente no site dos hotéis para reserva e disponibilidade.</p>
-    </div>
-
-  </div>
-
-  <footer>
-    &copy; 2026 Simpósio Científico. Todos os direitos reservados.
-  </footer>
+<footer>
+    © 2026 — Simpósio Científico · Publicado via GitHub Pages
+</footer>
 
 </body>
 </html>
