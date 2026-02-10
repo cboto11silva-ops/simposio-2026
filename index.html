@@ -11,48 +11,43 @@
 
   /* Estilos gerais do body */
   body {
-    margin: 0; /* Remove margens padrão */
-    font-family: 'Roboto Mono', monospace, Arial, sans-serif; /* Fonte principal */
-    background: linear-gradient(135deg, #071a2f, #0b2d4f); /* Fundo degradê azul escuro */
-    color: #f5f7fa; /* Cor do texto principal */
+    margin: 0;
+    font-family: 'Roboto Mono', monospace, Arial, sans-serif;
+    background: linear-gradient(135deg, #071a2f, #0b2d4f);
+    color: #f5f7fa;
   }
 
   /* ======================
      Estilos da seção HERO
      ====================== */
 
-  /* Container principal da hero - flexbox para alinhar texto e imagem lado a lado */
   .hero {
     display: flex;
-    flex-wrap: wrap; /* Permite quebra para telas menores */
-    max-width: 1200px; /* Limita largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 80px 20px 60px; /* Espaçamento interno */
-    align-items: center; /* Alinha verticalmente os itens */
-    gap: 40px; /* Espaço entre texto e imagem */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px 60px;
+    align-items: center;
+    gap: 40px;
   }
 
-  /* Texto da hero */
   .hero-text {
-    flex: 1 1 400px<img src="imagens/Biocognitiva.png" alt="Biocognitiva">
-; /* Ocupa espaço flexível com tamanho base de 400px */
-    max-width: 600px; /* Limita largura máxima */
+    flex: 1 1 400px;
+    max-width: 600px;
   }
 
-  /* Destaque pequeno acima do título */
   .hero-text .highlight {
-    background-color: #b6f000; /* Verde-limão */
-    color: #071a2f; /* Texto escuro */
+    background-color: #b6f000;
+    color: #071a2f;
     padding: 8px 20px;
-    border-radius: 30px; /* Bordas arredondadas */
+    border-radius: 30px;
     font-weight: 700;
     font-size: 0.9rem;
-    display: inline-block; /* Para ajustar o tamanho ao texto */
+    display: inline-block;
     margin-bottom: 20px;
-    letter-spacing: 0.03em; /* Espaçamento entre letras */
+    letter-spacing: 0.03em;
   }
 
-  /* Título principal */
   .hero-text h1 {
     font-size: 3.2rem;
     line-height: 1.15;
@@ -60,73 +55,63 @@
     font-weight: 700;
   }
 
-  /* Parte do título em verde para destaque */
   .hero-text h1 .green {
     color: #b6f000;
   }
 
-  /* Parágrafo descritivo */
   .hero-text p {
     font-size: 1.15rem;
-    opacity: 0.85; /* Um pouco transparente para suavizar */
+    opacity: 0.85;
     margin-bottom: 30px;
   }
 
-  /* Data e local do evento */
   .hero-text .date-location {
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 40px;
-    color: #a0a8b7; /* Cinza claro */
+    color: #a0a8b7;
   }
 
-  /* Botões da hero */
   .hero-buttons a {
     display: inline-block;
     padding: 16px 36px;
-    border-radius: 40px; /* Botões arredondados */
+    border-radius: 40px;
     font-weight: 700;
     font-size: 1rem;
     text-decoration: none;
-    transition: background-color 0.3s ease; /* Animação suave ao passar mouse */
+    transition: background-color 0.3s ease;
   }
 
-  /* Botão principal: Comprar ingresso */
   .btn-primary {
-    background-color: #b6f000; /* Verde-limão */
-    color: #071a2f; /* Texto escuro */
+    background-color: #b6f000;
+    color: #071a2f;
     margin-right: 20px;
   }
 
-  /* Hover do botão principal */
   .btn-primary:hover {
-    background-color: #9ad400; /* Verde-limão mais escuro */
+    background-color: #9ad400;
   }
 
-  /* Botão secundário: Fale conosco */
   .btn-secondary {
     background: transparent;
-    border: 2px solid #b6f000; /* Borda verde */
+    border: 2px solid #b6f000;
     color: #b6f000;
   }
 
-  /* Hover do botão secundário */
   .btn-secondary:hover {
     background-color: #b6f000;
     color: #071a2f;
   }
 
-  /* Container da imagem na hero */
   .hero-image {
     flex: 1 1 400px;
     max-width: 500px;
   }
 
-  /* Estilo da imagem - tamanho 100%, cantos arredondados e sombra */
   .hero-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 0 30px #b6f000aa; /* Sombra verde translúcida */
+    box-shadow: 0 0 30px #b6f000aa;
   }
 
   /* ======================
@@ -139,7 +124,6 @@
     padding: 50px 20px;
   }
 
-  /* Títulos das seções */
   h2 {
     color: #b6f000;
     border-left: 4px solid #b6f000;
@@ -147,28 +131,24 @@
     margin-bottom: 25px;
   }
 
-  /* Grid para cards da programação */
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Responsivo */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
   }
 
-  /* Cards individuais */
   .card {
-    background: rgba(255,255,255,0.05); /* Fundo translúcido */
+    background: rgba(255,255,255,0.05);
     padding: 25px;
     border-radius: 16px;
-    backdrop-filter: blur(6px); /* Efeito de desfoque atrás do card */
+    backdrop-filter: blur(6px);
   }
 
-  /* Iframe do mapa - largura total e cantos arredondados */
   iframe {
     width: 100%;
     border-radius: 16px;
   }
 
-  /* Rodapé */
   footer {
     background: #04101f;
     padding: 30px;
@@ -178,27 +158,23 @@
     color: #a0a8b7;
   }
 
-  /* ======================
-     Responsividade para telas menores
-     ====================== */
-
   @media (max-width: 840px) {
     .hero {
-      flex-direction: column; /* Coluna para celular */
+      flex-direction: column;
       padding: 40px 20px 40px;
     }
 
     .hero-text, .hero-image {
-      max-width: 100%; /* Ocupa 100% da largura */
+      max-width: 100%;
     }
 
     .hero-text h1 {
-      font-size: 2.4rem; /* Fonte menor no celular */
+      font-size: 2.4rem;
     }
 
     .hero-buttons a {
       margin-bottom: 15px;
-      display: block; /* Botões em linha separada */
+      display: block;
       width: fit-content;
     }
   }
@@ -207,44 +183,23 @@
 </head>
 <body>
 
-<!--
-  HERO - primeira seção visível, apresenta título, destaque, texto, data, botões e imagem
--->
 <header class="hero">
   <div class="hero-text">
-    <!-- Destaque acima do título -->
     <div class="highlight">Feitos para o Trabalho</div>
-
-    <!-- Título com destaque em verde -->
     <h1>BIOTOX – 1º Simpósio Baiano de <span class="green">Toxicologia Ocupacional</span></h1>
-
-    <!-- Texto descritivo do evento -->
     <p>Um marco para a Bahia e profissionais que atuam na proteção da saúde do trabalhador, prevenção de riscos e decisões técnicas baseadas em evidências.</p>
-
-    <!-- Data e local do evento -->
     <div class="date-location">📍 Salvador - BA · 🗓️ 16/05/2026</div>
-
-    <!-- Botões principais -->
     <div class="hero-buttons">
-      <!-- Link para compra do ingresso no Sympla -->
       <a href="https://www.sympla.com.br/evento/biotox-1-simposio-baiano-de-toxicologia-ocupacional-e-saude-do-trabalhador/3289917?algoliaID=392d33d602b6af894ecacd3fd74145bf" class="btn-primary" target="_blank" rel="noopener">🎟️ Comprar ingresso</a>
-
-      <!-- Link para contato via WhatsApp -->
       <a href="https://wa.me/5571991392107" class="btn-secondary" target="_blank" rel="noopener">💬 Fale conosco</a>
     </div>
   </div>
 
-  <!-- Imagem da hero -->
   <div class="hero-image">
- <img src="imagens/Biocognitiva.png" alt="Biocognitiva">
-
-
+    <img src="imagens/Biocognitiva.png" alt="Biocognitiva">
   </div>
 </header>
 
-<!--
-  Seção Sobre o Evento - explicação breve sobre o BIOTOX
--->
 <section>
   <h2>Sobre o BIOTOX</h2>
   <p>
@@ -254,9 +209,6 @@
   </p>
 </section>
 
-<!--
-  Seção Programação Científica - cards com horários e temas principais
--->
 <section>
   <h2>Programação Científica</h2>
   <div class="card-grid">
@@ -271,9 +223,6 @@
   </div>
 </section>
 
-<!--
-  Seção Local do Evento - endereço e mapa integrado do Google Maps
--->
 <section>
   <h2>Local do Evento</h2>
   <p>
@@ -281,8 +230,6 @@
     Rua Monte Conselho, 505 – Rio Vermelho<br>
     Salvador – BA
   </p>
-
-  <!-- Google Maps incorporado apontando para o local do evento -->
   <iframe
     src="https://www.google.com/maps?q=Novotel+Salvador+Rio+Vermelho&output=embed"
     height="450"
@@ -292,9 +239,6 @@
   ></iframe>
 </section>
 
-<!--
-  Rodapé simples com direitos reservados e branding
--->
 <footer>
   © 2026 — <strong>Biocognitiva | BIOTOX</strong> · Todos os direitos reservados
 </footer>
