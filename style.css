@@ -1,12 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
+/* ===== CORES DA IDENTIDADE ===== */
+:root {
+  --azul-escuro: #071a2f;
+  --azul-profundo: #04101f;
+  --verde-principal: #19c6a7;
+  --verde-claro: #3fe0b8;
+  --verde-destaque: #b6f000;
+  --texto-claro: #f5f7fa;
+  --texto-secundario: #a0a8b7;
+}
+
+/* ===== CORPO ===== */
 body {
   margin: 0;
   font-family: 'Roboto Mono', monospace, Arial, sans-serif;
-  background: linear-gradient(135deg, #071a2f, #0b2d4f);
-  color: #f5f7fa;
+  background: linear-gradient(
+    135deg,
+    var(--azul-escuro),
+    #0b2d4f,
+    #0f6f63
+  );
+  color: var(--texto-claro);
 }
 
+/* ===== HERO ===== */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -23,8 +41,12 @@ body {
 }
 
 .highlight {
-  background-color: #b6f000;
-  color: #071a2f;
+  background: linear-gradient(
+    45deg,
+    var(--verde-principal),
+    var(--verde-claro)
+  );
+  color: var(--azul-escuro);
   padding: 8px 20px;
   border-radius: 30px;
   font-weight: 700;
@@ -40,7 +62,7 @@ body {
 }
 
 .green {
-  color: #b6f000;
+  color: var(--verde-claro);
 }
 
 .hero-text p {
@@ -52,9 +74,10 @@ body {
 .date-location {
   font-weight: 600;
   margin-bottom: 40px;
-  color: #a0a8b7;
+  color: var(--texto-secundario);
 }
 
+/* ===== BOTÕES ===== */
 .hero-buttons a {
   display: inline-block;
   padding: 16px 36px;
@@ -64,23 +87,29 @@ body {
 }
 
 .btn-primary {
-  background-color: #b6f000;
-  color: #071a2f;
+  background: linear-gradient(
+    45deg,
+    var(--verde-principal),
+    var(--verde-claro)
+  );
+  color: var(--azul-escuro);
   margin-right: 20px;
 }
 
 .btn-secondary {
   background: transparent;
-  border: 2px solid #b6f000;
-  color: #b6f000;
+  border: 2px solid var(--verde-claro);
+  color: var(--verde-claro);
 }
 
+/* ===== IMAGEM HERO ===== */
 .hero-image img {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 0 30px #b6f000aa;
+  box-shadow: 0 0 30px #19c6a755;
 }
 
+/* ===== SEÇÕES ===== */
 section {
   max-width: 1100px;
   margin: auto;
@@ -88,52 +117,55 @@ section {
 }
 
 h2 {
-  color: #b6f000;
-  border-left: 4px solid #b6f000;
+  color: var(--verde-claro);
+  border-left: 4px solid var(--verde-principal);
   padding-left: 12px;
 }
 
+/* ===== GRID ===== */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
-/* ===== Ajuste para logos de patrocinadores ===== */
+/* ===== CARDS ===== */
 .card {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.06);
   padding: 25px;
   border-radius: 16px;
 
-  /* centraliza logo */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* altura padrão dos cards */
-  min-height: 150px;
+  min-height: 120px;
 }
 
+/* ===== LOGOS ===== */
 .card img {
-  max-width: 90%;
-  max-height: 110px;
+  width: auto;
+  height: 80px;
+  max-width: 100%;
   object-fit: contain;
 }
-/* =============================================== */
 
+/* ===== MAPA ===== */
 iframe {
   width: 100%;
   border-radius: 16px;
 }
 
+/* ===== RODAPÉ ===== */
 footer {
-  background: #04101f;
+  background: var(--azul-profundo);
   padding: 30px;
   text-align: center;
   font-size: 0.9rem;
-  color: #a0a8b7;
+  color: var(--texto-secundario);
 }
 
+/* ===== RESPONSIVO ===== */
 @media (max-width: 840px) {
   .hero {
     flex-direction: column;
