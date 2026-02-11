@@ -130,7 +130,7 @@ h2 {
 }
 
 /* ===== CARDS ===== */
-.card {
+card {
   background: rgba(255,255,255,0.06);
   padding: 25px;
   border-radius: 16px;
@@ -139,16 +139,17 @@ h2 {
   align-items: center;
   justify-content: center;
 
-  min-height: 120px;
+  min-height: 160px; /* aumenta altura do card */
 }
 
 /* ===== LOGOS ===== */
 .card img {
+  max-height: 120px;
+  max-width: 90%;
   width: auto;
-  height: 80px;
-  max-width: 100%;
   object-fit: contain;
 }
+
 
 /* ===== MAPA ===== */
 iframe {
